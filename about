@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-image">
+            <img src="/static/img/jellyfish.webp" alt="Jellyfish galaxy ESI 137-001">
+            <div class="container-image-overlay">Elvis Mello-Terencio</div>
+        </div>
+        <nav class="bar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/research">Research</a>
+        </nav>
+        <hr>
+        <div class="container">
+            
+<h1>About this site</h1>
+<p>This site was made with Flask and Python!</p>
+
+        </div>
+    </div>
+</body>
+</html>
