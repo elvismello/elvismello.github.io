@@ -4,23 +4,30 @@ from flask_frozen import Freezer
 
 
 app = flask.Flask(__name__)
+app.config["FREEZER_USE_DEFAULT_EXT"] = True
+app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 freezer = Freezer(app)
 
-@app.route("/")
-def index():
-    return flask.render_template("home.html")
+#app.config['FREEZER_RELATIVE_URLS'] = True
 
-@app.route("/about")
+
+@app.route("/")
+@app.route("/index.html")
+def index():
+    return flask.render_template("index.html")
+
+@app.route("/about.html")
 def about():
     return flask.render_template("about.html")
 
-@app.route("/research")
+@app.route("/research.html")
 def research():
     return flask.render_template("research.html")
 
-# @app.route("/contact")
+# @app.route("/contact.html")
 # def contact():
 #     return flask.render_template("contact.html")
+
 
 
 
