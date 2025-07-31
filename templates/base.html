@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My site{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-image">
+            <img src="{{url_for('static', filename='img/jellyfish.webp')}}" alt="Jellyfish galaxy ESI 137-001">
+            <div class="container-image-overlay">Elvis Mello-Terencio</div>
+        </div>
+        <nav class="bar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/research">Research</a>
+        </nav>
+        <hr>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>
