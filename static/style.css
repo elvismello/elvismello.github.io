@@ -20,6 +20,11 @@ footer {
     /* border-radius: 10px; */
     box-shadow: 0 0 10px #00000060;
 }
+.container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
 /* main body */
 .container-main {
@@ -78,14 +83,14 @@ nav.bar {
     align-items: center;
     gap: 2em;
 }
-nav a {
+nav.bar a {
     color: #64B5F6;
     text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
     position: relative;
 }
-nav a:hover {
+nav.bar a:hover {
     text-decoration: underline;
 }
 nav.bar a:not(:last-child)::after {
