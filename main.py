@@ -1,5 +1,6 @@
-import flask
 import sys
+from datetime import datetime
+import flask
 from flask_frozen import Freezer
 
 
@@ -9,6 +10,14 @@ app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 freezer = Freezer(app)
 
 #app.config['FREEZER_RELATIVE_URLS'] = True
+
+
+@app.context_processor
+def inject_global_site_variables():
+    last_updated = datetime.now().strftime("%d %B %Y at %H:%M")
+    return {
+        "last_updated" : last_updated
+    }
 
 
 @app.route("/")

@@ -8,7 +8,12 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: small;
+    color: #888;
+}
 .container {
     background-color: #1E1E1E;
     padding: 20px;
@@ -144,9 +149,3 @@ a:hover {
     color: #90CAF9;
 }
 
-footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: small;
-    color: #888;
-}
