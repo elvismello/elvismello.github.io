@@ -23,7 +23,7 @@
 
 <h2>Master's degree</h2>
 <p>
-    My master's degree project was about analyzing how galaxies traversing sloshing cold fronts behave. I examined star formation rate, gas stripping and color index using numerical simulations of a galaxy placed in a wind tunnel. The main results indicate that observable changes are often small (below 5%) and that most effects are short-lived. Gas stripping is the most impacted aspect, where the abrupt transition combined with the stronger ram pressure amplify gas loss, leading to heavily truncated galaxies and long gas tails in the most extreme scenarios. Below are a few GIFs showing edge-on views of each simulation run.
+    My master's degree project focused on analyzing how galaxies traversing sloshing cold fronts behave. I examined star formation rate, gas stripping and color index using numerical simulations of a galaxy placed in a wind tunnel. The main results indicate that observable changes are often small (below 5%) and that most effects are short-lived. Gas stripping is the most impacted aspect, where the abrupt transition combined with the stronger ram pressure amplify gas loss, leading to heavily truncated galaxies and long gas tails in the most extreme scenarios. Below are a few GIFs showing edge-on views of each simulation run.
 </p>
 
 <div class="container-gif">
@@ -41,7 +41,7 @@
 
 <h2>Other Projects</h2>
 
-<h3>Maintained Repositories -- <a href="https://github.com/elvismello/galstep">Galstep</a>, <a href="https://github.com/elvismello/clustep">Clustep</a> and <a href="https://github.com/elvismello/snapshotJoiner">snapshotJoiner</a></h3>
+<h3>Maintained Repositories &mdash <a href="https://github.com/elvismello/galstep">Galstep</a>, <a href="https://github.com/elvismello/clustep">Clustep</a> and <a href="https://github.com/elvismello/snapshotJoiner">snapshotJoiner</a></h3>
 
 <p>
     <a href="https://github.com/elvismello/galstep">Galstep</a> and <a href="https://github.com/elvismello/clustep">Clustep</a> are two simple but complete initial condition generation scripts for spiral galaxies and clusters, respectively. In 2021 these scripts were still still written in Python 2, which was rapidly being phased out in favor of Python 3. <a href="https://ruggiero.github.io/">Raffael Ruggiero</a> did an incredible work when implementing the original versions, but his public versions were never updated. Since the Extragalactic Astrophysics Group in UTFPR uses these scripts extensively, I took the opportunity to port and begin maintaining them.
@@ -58,10 +58,12 @@
 
 
 
-<h3>"Scientific Initiation"</h3>
+<h3>Undergraduate Research</h3>
+
+<h4>Galaxy and Sloshing simulation</h4>
 
 <p>
-    During my undergraduate studies, I began exploring extragalactic simulations. One of the first projects was centered on simulating a galaxy falling into an cluster, as illustrated in the video below. I also experimented by employing analytical mass profiles to model dark matter distribution. The main goal was to investigate how a sloshing spiral affects galaxies crossing it. Preliminary results indicated that galaxies should lose more gas than if they crossed a similar but undisturbed environment. This initial work eventually evolved into my master's research project, where I analyzed the phenomenon more thoroughly. The following video shows a galaxy (the blob on the left of each panel) gradually entering an idealized cluster. 
+    I began exploring extragalactic simulations during my undergraduate studies. One of the first projects was centered on simulating a galaxy falling into an cluster, as illustrated in the videos below. I also experimented by employing analytical mass profiles to model dark matter distribution. The main goal was to investigate how a sloshing spiral affects galaxies crossing it. Preliminary results indicated that galaxies should lose more gas than if they crossed a similar but undisturbed environment. This initial work eventually evolved into my master's research project, where I analyzed the phenomenon more thoroughly. The following video shows a galaxy (the blob on the left of each panel) gradually entering an idealized cluster. 
 </p>
 
 <!-- <div class="container-video">
@@ -97,7 +99,7 @@
 </div>
 
 <p>
-    And when the galaxy crossed the center halo cusp because no impact parameter was set, it also gave rise to interesting -- although non-physical -- phenomena:
+    And when the galaxy crossed the center halo cusp because no impact parameter was set, it also gave rise to interesting &mdash although non-physical &mdash phenomena:
 </p>
 
 <div class="container-video">
@@ -108,10 +110,29 @@
 </div>
 
 
-<h3>Other</h3>
+<h4>Machine learning</h4>
 
-In my <a href="">github page</a> there are also other projects reflecting some of my interestests, such as a simple particle simulation (<a href="https://github.com/elvismello/particleSim">particleSim</a>) and a solver for the Burgers' Equation (<a href="https://github.com/elvismello/BurgersSolution">BurgersSolution</a>)
+<p>
+    I have applied machine learning techniques in two different projects: one conducted alongside my first extragalactic simulations, under supervision of <a href="https://sites.google.com/professores.utfpr.edu.br/rubensmachado">Professor Rubens Machado</a>, and another for my undergraduate thesis, supervised by <a href="https://fisica.ufpr.br/thiago/">Professor Thiago de Lima Prado</a>.
+</p>
 
+<p>
+    In the first project, I implemented a neural network inspired by AlexNet to identify the trail vectors in jellyfish galaxies. I then compared its performance to other experimental methods, such as simply counting pixels on different sides of an image and applying mathematical transformations, like the Radon transform.
+</p>
+
+<p>
+    The second project focused on applying neural networks and clustering algorithms to  identify patterns in recurrence microstates. The main objective was to develop methods capable of distinguishing stochastic from deterministic signals. Below is an example of a recurrence matrix with possible 2x2 microstates delimited. Quantifiers can be tuned to certain patterns, where the frequency of each microstate is related to the underlying physics (or lack thereof) of a signal. The difficult part of this project was implementing a robust method that could be applied to higher-dimensional microstates, where manual verification of patterns becomes impractical.
+</p>
+
+
+<img src="/static/img/recurrence_plot_example.jpg" alt="Recurrence plot example" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: auto;">
+
+
+<h3>Misc</h3>
+
+<p>
+In my <a href="">GitHub page</a> there are also other projects reflecting some of my interestests, such as a simple particle simulation (<a href="https://github.com/elvismello/particleSim">particleSim</a>) and a solver for the Burgers' Equation (<a href="https://github.com/elvismello/BurgersSolution">BurgersSolution</a>)
+</p>
 
         </div>
     </div>
