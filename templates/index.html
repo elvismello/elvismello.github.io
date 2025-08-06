@@ -1,8 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}Home Page{% endblock %}
+{% block title %}Elvis Mello-Terencio{% endblock %}
 
 {% block content %}
-<h1>Welcome to my site!</h1>
-<p>This is the home page.</p>
+<img src="{{url_for('static', filename='img/profile.jpg')}}" alt="Elvis Mello-Terencio" style="float:left; margin-right: 15px; width: 300px; height: auto;">
+<h1 style="text-align: left;">Welcome!</h1>
+
+<p>
+    My name is Elvis Mello-Terencio and I am currently a master's degree student in astrophysics at Universidade Federal Tecnológica do Paraná (UTFPR), Brazil. My research focuses on the interactions between spiral galaxies and the intracluster medium. I'm also passionate about programming and have often incorporated computational methods into my work, including parallelization, GPU programming and exploring machine learning applications to astronomy and physics.
+</p>
+
 {% endblock %}

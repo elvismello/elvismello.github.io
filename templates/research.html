@@ -4,5 +4,96 @@
 
 {% block content %}
 <h1>Research</h1>
-<p>This is where I speak about my research.</p>
+
+<h2>Master's degree</h2>
+<p>
+    My master's degree project was about analyzing how galaxies traversing sloshing cold fronts behave. I examined star formation rate, gas stripping and color index using numerical simulations of a galaxy placed in a wind tunnel. The main results indicate that observable changes are often small (below 5%) and that most effects are short-lived. Gas stripping is the most impacted aspect, where the abrupt transition combined with the stronger ram pressure amplify gas loss, leading to heavily truncated galaxies and long gas tails in the most extreme scenarios. Below are a few GIFs showing edge-on views of each simulation run.
+</p>
+
+<div class="container-gif">
+    <img src="{{url_for('static', filename='gifs/masters/low_1.gif')}}" alt="low_1 simulation">
+    <img src="{{url_for('static', filename='gifs/masters/high_1.gif')}}" alt="high_1 simulation">
+    <img src="{{url_for('static', filename='gifs/masters/low_2.gif')}}" alt="low_2 simulation">
+    <img src="{{url_for('static', filename='gifs/masters/high_2.gif')}}" alt="high_2 simulation">
+    <img src="{{url_for('static', filename='gifs/masters/low_5.gif')}}" alt="low_5 simulation">
+    <img src="{{url_for('static', filename='gifs/masters/high_5.gif')}}" alt="high_5 simulation">
+    <img src="{{url_for('static', filename='gifs/masters/low_10.gif')}}" alt="low_10 simulation">
+    <img src="{{url_for('static', filename='gifs/masters/high_10.gif')}}" alt="high_10 simulation">
+</div>
+
+
+
+<h2>Other Projects</h2>
+
+<h3>Maintained Repositories -- <a href="https://github.com/elvismello/galstep">Galstep</a>, <a href="https://github.com/elvismello/clustep">Clustep</a> and <a href="https://github.com/elvismello/snapshotJoiner">snapshotJoiner</a></h3>
+
+<p>
+    <a href="https://github.com/elvismello/galstep">Galstep</a> and <a href="https://github.com/elvismello/clustep">Clustep</a> are two simple but complete initial condition generation scripts for spiral galaxies and clusters, respectively. In 2021 these scripts were still still written in Python 2, which was rapidly being phased out in favor of Python 3. <a href="https://ruggiero.github.io/">Raffael Ruggiero</a> did an incredible work when implementing the original versions, but his public versions were never updated. Since the Extragalactic Astrophysics Group in UTFPR uses these scripts extensively, I took the opportunity to port and begin maintaining them.
+</p>
+
+<p>
+    <a href="https://github.com/elvismello/snapshotJoiner">snapshotJoiner</a> is a tool I developed to facilitate the joining process of different initial condition files in numerical simulations. Its main version was based on a module from <a href="https://github.com/elvismello/galstep">Galstep</a> and <a href="https://github.com/elvismello/clustep">Clustep</a> that implemented read/write functions. An improved version, namely <a href="https://github.com/elvismello/snapshotJoinerMk2">snapshotJoinerMk2</a>, was later developed to streamline the workflow and improve performance, especially when working with larger simulatino files in HDF5 format.
+</p>
+
+<p>
+    Over time, I have implemented new features aimed at optimizing and future-proofing these tools, ensuring that new users may start using them without <del>much</del> friction.
+</p>
+
+
+
+
+<h3>"Scientific Initiation"</h3>
+
+<p>
+    During my undergraduate studies, I began exploring extragalactic simulations. One of the first projects was centered on simulating a galaxy falling into an cluster, as illustrated in the video below. I also experimented by employing analytical mass profiles to model dark matter distribution. The main goal was to investigate how a sloshing spiral affects galaxies crossing it. Preliminary results indicated that galaxies should lose more gas than if they crossed a similar but undisturbed environment. This initial work eventually evolved into my master's research project, where I analyzed the phenomenon more thoroughly. The following video shows a galaxy (the blob on the left of each panel) gradually entering an idealized cluster. 
+</p>
+
+<!-- <div class="container-video">
+  <iframe title="Cluster sloshing"
+    src="https://www.youtube.com/embed/QxGq-ACvqbI?loop=1&playlist=QxGq-ACvqbI"
+    frameborder="0"
+    allowfullscreen></iframe>
+</div> -->
+<!-- 
+<div class="container-video">
+  <iframe title="Galaxy entering cluster"
+    src="https://www.youtube.com/embed/9zsHrcNgO6w?loop=1&playlist=9zsHrcNgO6w"
+    frameborder="0"
+    allowfullscreen></iframe>
+</div> -->
+
+<div class="container-video">
+  <iframe title="Sloshing spiral"
+    src="https://www.youtube.com/embed/lR2lLkNv39A?loop=1&playlist=lR2lLkNv39A"
+    frameborder="0"
+    allowfullscreen></iframe>
+</div>
+
+<p>
+    I've also found that "wrong" experiments often generate the funniest and most memorable results. At that time, inducing sloshing spirals in a cluster merger while learning how to use Gadget2 for the first time resulted in quite unexpected numerical behaviour:
+</p>
+
+<div class="container-video">
+  <iframe title="Cluster merger bug"
+    src="https://www.youtube.com/embed/9c-z1mTnA4Y?loop=1&playlist=9c-z1mTnA4Y"
+    frameborder="0"
+    allowfullscreen></iframe>
+</div>
+
+<p>
+    And when the galaxy crossed the center halo cusp because no impact parameter was set, it also gave rise to interesting -- although non-physical -- phenomena:
+</p>
+
+<div class="container-video">
+  <iframe title="Galaxy stars"
+    src="https://www.youtube.com/embed/_aL30JVzwMM?loop=1&playlist=_aL30JVzwMM"
+    frameborder="0"
+    allowfullscreen></iframe>
+</div>
+
+
+<h3>Other</h3>
+
+In my <a href="">github page</a> there are also other projects reflecting some of my interestests, such as a simple particle simulation (<a href="https://github.com/elvismello/particleSim">particleSim</a>) and a solver for the Burgers' Equation (<a href="https://github.com/elvismello/BurgersSolution">BurgersSolution</a>)
+
 {% endblock %}
